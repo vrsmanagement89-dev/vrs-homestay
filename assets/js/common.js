@@ -1,31 +1,28 @@
-/* ============================================
-   VRS HOMESTAY - COMMON JS
-   Navbar scroll, hamburger, active link
-============================================ */
+// Load shared navbar and footer
+function loadComponent(id, file, callback) {
+  fetch(file)
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById(id).innerHTML = html;
+      if (callback) callback();
+    });
+}
 
-document.addEventListener('DOMContentLoaded', function () {
-
-  // --- Navbar scroll effect ---
+loadComponent('navbar-placeholder', '/components/navbar.html', function() {
+  // Navbar scroll effect
   const navbar = document.querySelector('.navbar');
   window.addEventListener('scroll', () => {
-    if (window.scrollY > 60) {
-      navbar.classList.add('scrolled');
-    } else {
-      navbar.classList.remove('scrolled');
-    }
+    navbar.classList.toggle('scrolled', window.scrollY > 60);
   });
 
-  // --- Hamburger toggle ---
+  // Hamburger
   const hamburger = document.querySelector('.hamburger');
   const mobileMenu = document.querySelector('.mobile-menu');
-
   if (hamburger && mobileMenu) {
     hamburger.addEventListener('click', () => {
       hamburger.classList.toggle('active');
       mobileMenu.classList.toggle('open');
     });
-
-    // Close on link click
     mobileMenu.querySelectorAll('a').forEach(link => {
       link.addEventListener('click', () => {
         hamburger.classList.remove('active');
@@ -34,13 +31,12 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  // --- Active nav link based on current page ---
+  // Active link
   const currentPage = window.location.pathname.split('/').pop() || 'index.html';
   document.querySelectorAll('.navbar-nav a, .mobile-menu a').forEach(link => {
-    const href = link.getAttribute('href');
-    if (href === currentPage || (currentPage === '' && href === 'index.html')) {
-      link.classList.add('active');
-    }
+    if (link.getAttribute('href') === currentPage) link.classList.add('active');
   });
-
 });
+
+loadComponent('footer-placeholder', '/components/footer.html');
+

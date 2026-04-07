@@ -1,21 +1,12 @@
-const reveals = document.querySelectorAll(".reveal")
-
-function revealOnScroll(){
-
-const windowHeight = window.innerHeight
-
-reveals.forEach(el => {
-
-const elementTop = el.getBoundingClientRect().top
-
-if(elementTop < windowHeight - 100){
-
-el.classList.add("active")
-
-}
-
-})
-
-}
-
-window.addEventListener("scroll", revealOnScroll)
+/* ============================================
+   VRS HOMESTAY - ABOUT JS
+============================================ */
+document.addEventListener('DOMContentLoaded', function () {
+  const revealEls = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) { entry.target.classList.add('visible'); observer.unobserve(entry.target); }
+    });
+  }, { threshold: 0.1 });
+  revealEls.forEach(el => observer.observe(el));
+});
