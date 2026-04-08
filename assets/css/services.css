@@ -649,3 +649,185 @@
   .why-book-grid { grid-template-columns: 1fr; }
   .house-amenities-grid { grid-template-columns: repeat(2, 1fr); }
 }
+
+
+
+
+
+
+/* ===============================
+   HOUSE RULES SECTION
+================================ */
+
+.house-rules{
+  padding:5rem 0;
+  background:var(--black);
+}
+
+.house-rules-inner{
+  max-width:1200px;
+  margin:0 auto;
+  padding:0 3rem;
+  text-align:center;
+}
+
+.house-rules .section-label{
+  font-family:var(--font-heading);
+  font-size:0.65rem;
+  letter-spacing:0.28em;
+  text-transform:uppercase;
+  color:var(--gold);
+  display:block;
+  margin-bottom:0.6rem;
+}
+
+.house-rules h2{
+  font-family:var(--font-heading);
+  font-size:clamp(1.5rem,3vw,2.2rem);
+  letter-spacing:0.08em;
+  text-transform:uppercase;
+  color:var(--text);
+  font-weight:700;
+}
+
+.house-rules h2 span{
+  color:var(--gold);
+}
+
+.rules-line{
+  width:50px;
+  height:1px;
+  background:var(--gold);
+  margin:1.2rem auto 2.5rem;
+}
+
+
+/* RULE GRID */
+
+.rules-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:1.5rem;
+}
+
+
+/* RULE CARD */
+
+.rule-card{
+  background:var(--card-bg);
+  border:1px solid rgba(201,168,76,0.12);
+  padding:1.4rem 1.2rem;
+  display:flex;
+  align-items:flex-start;
+  gap:0.8rem;
+  transition:var(--transition);
+}
+
+.rule-card:hover{
+  border-color:var(--gold);
+  background:var(--dark);
+  box-shadow:var(--shadow-gold);
+  transform:translateY(-3px);
+}
+
+
+/* ICON */
+
+.rule-card i{
+  color:var(--gold);
+  font-size:1rem;
+  margin-top:3px;
+  flex-shrink:0;
+}
+
+
+/* TEXT */
+
+.rule-card p{
+  font-family:var(--font-body);
+  font-size:0.82rem;
+  color:var(--text-muted);
+  line-height:1.65;
+  text-align:left;
+}
+
+.rule-card strong{
+  color:var(--text);
+  font-weight:600;
+}
+
+
+/* ===============================
+   SAFETY RULES SECTION
+================================ */
+
+.safety-rules{
+  background:var(--dark);
+  background-image:
+    linear-gradient(45deg, rgba(201,168,76,0.03) 25%, transparent 25%),
+    linear-gradient(-45deg, rgba(201,168,76,0.03) 25%, transparent 25%);
+  background-size:30px 30px;
+}
+
+
+/* ===============================
+   TABLET
+================================ */
+
+@media (max-width:1024px){
+
+  .rules-grid{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .house-rules-inner{
+    padding:0 2rem;
+  }
+
+}
+
+
+/* ===============================
+   MOBILE
+================================ */
+
+@media (max-width:768px){
+
+  .rules-grid{
+    grid-template-columns:1fr;
+  }
+
+  .rule-card{
+    padding:1.2rem;
+  }
+
+  .rule-card p{
+    font-size:0.8rem;
+  }
+
+  .house-rules-inner{
+    padding:0 1.5rem;
+  }
+
+}
+
+
+/* ===============================
+   SMALL MOBILE
+================================ */
+
+@media (max-width:480px){
+
+  .house-rules{
+    padding:4rem 0;
+  }
+
+  .rule-card{
+    gap:0.6rem;
+  }
+
+  .rule-card i{
+    font-size:0.9rem;
+  }
+
+}

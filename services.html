@@ -1,295 +1,390 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="VRS Homestay – Explore our 6 premium luxury houses in Mayiladuthurai. Each residence crafted for elegance, comfort and privacy." />
-  <title>Our Services & Houses | VRS Homestay – Mayiladuthurai</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;900&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-  <link rel="stylesheet" href="assets/css/common.css" />
-  <link rel="stylesheet" href="assets/css/services.css" />
-</head>
-<body>
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="VRS Homestay" />
+    <link rel="icon" type="image/svg+xml" href="/assets/images/hero/vrs-logo1-removebg-preview.png" />
+    <title>VRS Homestay</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;900&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/common.css" />
+    <link rel="stylesheet" href="assets/css/services.css" />
+  </head>
+  <body>
 
-<!--NAVBAR-->
-<div id="navbar-placeholder"></div>
+  <!--NAVBAR-->
+  <div id="navbar-placeholder"></div>
 
-<!-- PAGE HERO -->
-<section class="page-hero">
-  <div class="page-hero-bg"></div>
-  <div class="page-hero-overlay"></div>
-  <div class="page-hero-content">
-    <div class="breadcrumb">
-      <a href="index.html">Home</a>
-      <span class="sep">&#8212;</span>
-      <span>Our Services</span>
-    </div>
-    <h1>Our <span>Residences</span></h1>
-    <div class="page-hero-ornament">
-      <div class="page-hero-ornament-line"></div>
-      <div class="page-hero-ornament-diamond"></div>
-      <div class="page-hero-ornament-line right"></div>
-    </div>
-  </div>
-</section>
-
-<!-- ===================== INTRO ===================== -->
-<section class="services-intro">
-  <div class="services-intro-inner reveal">
-    <span class="section-label" style="font-family:var(--font-heading);font-size:0.65rem;letter-spacing:0.3em;text-transform:uppercase;color:var(--gold);display:block;margin-bottom:0.8rem;">Selective Luxury Living</span>
-    <h2 style="font-family:var(--font-heading);font-size:clamp(1.5rem,3vw,2.2rem);text-transform:uppercase;letter-spacing:0.08em;color:var(--text);font-weight:700;">Our Houses. Our Standard of Excellence.</h2>
-    <div style="width:50px;height:1px;background:var(--gold);margin:1.2rem auto;"></div>
-    <p> our premium residences in Mayiladuthurai is designed to deliver the same uncompromising standard of luxury. Every house is a sanctuary crafted with quality finishes, premium furnishings, and impeccable attention to detail.</p>
-  </div>
-</section>
-
-<!-- ===================== FEATURED HOUSE SHOWCASE ===================== -->
-<section class="featured-house" id="featuredHouse">
-  <div class="featured-house-inner">
-
-    <div class="featured-header reveal">
-      <div>
-        <span style="font-family:var(--font-heading);font-size:0.62rem;letter-spacing:0.28em;text-transform:uppercase;color:var(--gold);display:block;margin-bottom:0.4rem;">Featured Residence</span>
-        <h2 style="font-family:var(--font-heading);font-size:clamp(1.4rem,2.8vw,2rem);text-transform:uppercase;letter-spacing:0.06em;color:var(--text);font-weight:700;">Explore Our Houses</h2>
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="page-hero-bg"></div>
+    <div class="page-hero-overlay"></div>
+    <div class="page-hero-content">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <span class="sep">&#8212;</span>
+        <span>Our Services</span>
       </div>
-      <div class="featured-nav">
-        <button class="feat-nav-btn" id="prevHouse" title="Previous House"><i class="fas fa-chevron-left"></i></button>
-        <button class="feat-nav-btn" id="nextHouse" title="Next House"><i class="fas fa-chevron-right"></i></button>
+      <h1>Our <span>Residences</span></h1>
+      <div class="page-hero-ornament">
+        <div class="page-hero-ornament-line"></div>
+        <div class="page-hero-ornament-diamond"></div>
+        <div class="page-hero-ornament-line right"></div>
       </div>
     </div>
+  </section>
 
-    <div class="featured-showcase">
-
-      <!-- Image Slider -->
-      <div class="featured-slider reveal reveal-delay-1">
-        <div class="featured-slider-track" id="sliderTrack">
-          <img src="https://images.unsplash.com/photo-1613977257363-707ba9348227?w=900&q=80" alt="VRS House" class="featured-slide-img" />
-          <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=900&q=80" alt="VRS House" class="featured-slide-img" />
-          <img src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?w=900&q=80" alt="VRS House" class="featured-slide-img" />
-        </div>
-
-        <div class="featured-price-badge" id="housePriceBadge">₹4,500 / Night</div>
-
-        <!-- Slider arrows -->
-        <button id="prevSlide" style="position:absolute;left:0.8rem;top:50%;transform:translateY(-50%);background:rgba(13,13,13,0.7);border:1px solid rgba(201,168,76,0.3);color:var(--gold);width:34px;height:34px;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:all 0.3s;font-size:0.8rem;" title="Prev">
-          <i class="fas fa-chevron-left"></i>
-        </button>
-        <button id="nextSlide" style="position:absolute;right:0.8rem;top:50%;transform:translateY(-50%);background:rgba(13,13,13,0.7);border:1px solid rgba(201,168,76,0.3);color:var(--gold);width:34px;height:34px;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:all 0.3s;font-size:0.8rem;" title="Next">
-          <i class="fas fa-chevron-right"></i>
-        </button>
-
-        <div class="featured-slider-dots">
-          <button class="slider-dot active"></button>
-          <button class="slider-dot"></button>
-          <button class="slider-dot"></button>
-        </div>
-      </div>
-
-      <!-- House Info -->
-      <div class="reveal reveal-delay-2">
-        <h2 class="house-info-title" id="houseName">VRS House</h2>
-        <p class="house-info-sub" id="houseSub"> Premium Suite</p>
-
-        <div class="house-tags" id="houseTags">
-          <span class="house-tag">2 Bedrooms</span>
-          <span class="house-tag">1200 sq.feet</span>
-          <span class="house-tag">2 bathrooms</span>
-        </div>
-
-        
-        <!-- Amenities -->
-        <div class="house-amenities-grid">
-          <div class="house-amenity"><i class="fas fa-wifi"></i><span>Free WiFi</span></div>
-          <div class="house-amenity"><i class="fas fa-snowflake"></i><span>AC</span></div>
-          <div class="house-amenity"><i class="fas fa-tv"></i><span>Smart TV</span></div>
-          <div class="house-amenity"><i class="fas fa-fire-burner"></i><span>Kitchen</span></div>
-          <div class="house-amenity"><i class="fas fa-droplet"></i><span>Hot Water</span></div>
-          <div class="house-amenity"><i class="fas fa-car"></i><span>Parking</span></div>
-        </div>
-
-        <!-- Stats -->
-        <div class="house-stats">
-          <div class="house-stat-row">
-            <div class="house-stat-label"><span>Cleanliness</span><span class="pct">98%</span></div>
-            <div class="stat-bg"><div class="stat-fill" data-width="98%"></div></div>
-          </div>
-          <div class="house-stat-row">
-            <div class="house-stat-label"><span>Satisfaction</span><span class="pct">95%</span></div>
-            <div class="stat-bg"><div class="stat-fill" data-width="95%"></div></div>
-          </div>
-          <div class="house-stat-row">
-            <div class="house-stat-label"><span>Comfort</span><span class="pct">100%</span></div>
-            <div class="stat-bg"><div class="stat-fill" data-width="100%"></div></div>
-          </div>
-        </div>
-
-        <div class="house-cta-btns">
-          <a href="contact.html" class="btn-gold" style="font-family:var(--font-heading);font-size:0.65rem;letter-spacing:0.2em;text-transform:uppercase;font-weight:700;padding:0.85rem 2rem;background:var(--gold);color:var(--black);border:1px solid var(--gold);transition:all 0.35s;display:inline-block;">Reserve Now</a>
-          <a href="contact.html" class="btn-outline" style="font-family:var(--font-heading);font-size:0.65rem;letter-spacing:0.2em;text-transform:uppercase;font-weight:600;padding:0.85rem 2rem;background:transparent;color:var(--text);border:1px solid rgba(245,240,232,0.35);transition:all 0.35s;display:inline-block;">Enquire</a>
-        </div>
-      </div>
-
-    </div><!-- end featured-showcase -->
-
-    <!-- ---- ALL 6 HOUSE CARDS ---- -->
-    <!-- <div class="all-houses" style="padding:0;background:transparent;">
-      <div style="padding:0;">
-        <div class="all-houses-header reveal" style="text-align:left;margin-bottom:1.5rem;">
-          <span style="font-family:var(--font-heading);font-size:0.62rem;letter-spacing:0.28em;text-transform:uppercase;color:var(--gold);display:block;margin-bottom:0.3rem;">All Residences</span>
-          <p class="all-houses-note">Click any house below to explore it in detail above ↑</p>
-        </div>
-        <div class="houses-grid">
-
-          <div class="house-card reveal reveal-delay-1" style="border-color:rgba(201,168,76,0.5);">
-            <div class="house-card-img">
-              <img src="https://images.unsplash.com/photo-1613977257363-707ba9348227?w=600&q=75" alt="The Onyx Den" loading="lazy" />
-              <div class="house-card-number">01</div>
-            </div>
-            <div class="house-card-body">
-              <h3 class="house-card-name">The Onyx Den</h3>
-              <p class="house-card-desc">Dark luxury with gold finishes, private pool and garden views. Ideal for families.</p>
-              <div class="house-card-meta">
-                <span class="house-card-price">₹4,500 / Night</span>
-                <a href="contact.html" class="house-card-btn">Book Now</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="house-card reveal reveal-delay-2">
-            <div class="house-card-img">
-              <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=600&q=75" alt="Ivory Palace" loading="lazy" />
-              <div class="house-card-number">02</div>
-            </div>
-            <div class="house-card-body">
-              <h3 class="house-card-name">Ivory Palace</h3>
-              <p class="house-card-desc">Pristine marble interiors, panoramic city views and timeless elegance throughout.</p>
-              <div class="house-card-meta">
-                <span class="house-card-price">₹4,500 / Night</span>
-                <a href="contact.html" class="house-card-btn">Book Now</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="house-card reveal reveal-delay-3">
-            <div class="house-card-img">
-              <img src="https://images.unsplash.com/photo-1596436889106-be35e843f974?w=600&q=75" alt="Sky Loft" loading="lazy" />
-              <div class="house-card-number">03</div>
-            </div>
-            <div class="house-card-body">
-              <h3 class="house-card-name">Sky Loft</h3>
-              <p class="house-card-desc">Open-plan executive retreat with a private rooftop deck and floor-to-ceiling windows.</p>
-              <div class="house-card-meta">
-                <span class="house-card-price">₹4,500 / Night</span>
-                <a href="contact.html" class="house-card-btn">Book Now</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="house-card reveal reveal-delay-1">
-            <div class="house-card-img">
-              <img src="https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=600&q=75" alt="Bronze Villa" loading="lazy" />
-              <div class="house-card-number">04</div>
-            </div>
-            <div class="house-card-body">
-              <h3 class="house-card-name">Bronze Villa</h3>
-              <p class="house-card-desc">Our grandest villa with 5 bedrooms, private garden and outdoor BBQ entertainment area.</p>
-              <div class="house-card-meta">
-                <span class="house-card-price">₹4,500 / Night</span>
-                <a href="contact.html" class="house-card-btn">Book Now</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="house-card reveal reveal-delay-2">
-            <div class="house-card-img">
-              <img src="https://images.unsplash.com/photo-1560185127-6ed189bf02f4?w=600&q=75" alt="Azure Retreat" loading="lazy" />
-              <div class="house-card-number">05</div>
-            </div>
-            <div class="house-card-body">
-              <h3 class="house-card-name">Azure Retreat</h3>
-              <p class="house-card-desc">Infinity pool, natural stone accents and serene nature views for a resort-style escape.</p>
-              <div class="house-card-meta">
-                <span class="house-card-price">₹4,500 / Night</span>
-                <a href="contact.html" class="house-card-btn">Book Now</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="house-card reveal reveal-delay-3">
-            <div class="house-card-img">
-              <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&q=75" alt="Gold Studio" loading="lazy" />
-              <div class="house-card-number">06</div>
-            </div>
-            <div class="house-card-body">
-              <h3 class="house-card-name">Gold Studio</h3>
-              <p class="house-card-desc">Boutique compact luxury for solo travelers and couples with a dedicated work lounge.</p>
-              <div class="house-card-meta">
-                <span class="house-card-price">₹4,500 / Night</span>
-                <a href="contact.html" class="house-card-btn">Book Now</a>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </div> -->
-
-  </div>
-</section>
-
-<!-- ===================== WHY BOOK WITH US ===================== -->
-<section class="why-book-strip">
-  <div class="why-book-inner">
-    <div class="reveal">
-      <span style="font-family:var(--font-heading);font-size:0.65rem;letter-spacing:0.3em;text-transform:uppercase;color:var(--gold);display:block;margin-bottom:0.8rem;">Our Promise</span>
-      <h2 style="font-family:var(--font-heading);font-size:clamp(1.5rem,3vw,2.2rem);text-transform:uppercase;letter-spacing:0.08em;color:var(--text);font-weight:700;">Why Book With VRS</h2>
+  <!-- ===================== INTRO ===================== -->
+  <section class="services-intro">
+    <div class="services-intro-inner reveal">
+      <span class="section-label" style="font-family:var(--font-heading);font-size:0.65rem;letter-spacing:0.3em;text-transform:uppercase;color:var(--gold);display:block;margin-bottom:0.8rem;">Selective Luxury Living</span>
+      <h2 style="font-family:var(--font-heading);font-size:clamp(1.5rem,3vw,2.2rem);text-transform:uppercase;letter-spacing:0.08em;color:var(--text);font-weight:700;">Our Houses. Our Standard of Excellence.</h2>
       <div style="width:50px;height:1px;background:var(--gold);margin:1.2rem auto;"></div>
+      <p> our premium residences in Mayiladuthurai is designed to deliver the same uncompromising standard of luxury. Every house is a sanctuary crafted with quality finishes, premium furnishings, and impeccable attention to detail.</p>
     </div>
-    <div class="why-book-grid">
-      <div class="why-book-item reveal reveal-delay-1">
-        <div class="why-book-icon"><i class="fas fa-lock"></i></div>
-        <h4>Secure Booking</h4>
-        <p>Your reservation is confirmed instantly with full data security and transparent pricing — no hidden charges.</p>
+  </section>
+
+  <!-- ===================== FEATURED HOUSE SHOWCASE ===================== -->
+  <section class="featured-house" id="featuredHouse">
+    <div class="featured-house-inner">
+
+      <div class="featured-header reveal">
+        <div>
+          <span style="font-family:var(--font-heading);font-size:0.62rem;letter-spacing:0.28em;text-transform:uppercase;color:var(--gold);display:block;margin-bottom:0.4rem;">Featured Residence</span>
+          <h2 style="font-family:var(--font-heading);font-size:clamp(1.4rem,2.8vw,2rem);text-transform:uppercase;letter-spacing:0.06em;color:var(--text);font-weight:700;">Explore Our Houses</h2>
+        </div>
+        <div class="featured-nav">
+          <button class="feat-nav-btn" id="prevHouse" title="Previous House"><i class="fas fa-chevron-left"></i></button>
+          <button class="feat-nav-btn" id="nextHouse" title="Next House"><i class="fas fa-chevron-right"></i></button>
+        </div>
       </div>
-      <div class="why-book-item reveal reveal-delay-2">
-        <div class="why-book-icon"><i class="fas fa-headset"></i></div>
-        <h4>24/7 Concierge</h4>
-        <p>Our dedicated concierge team is available round-the-clock to assist with any request before and during your stay.</p>
+
+      <div class="featured-showcase">
+
+        <!-- Image Slider -->
+        <div class="featured-slider reveal reveal-delay-1">
+          <div class="featured-slider-track" id="sliderTrack">
+            <img src="https://images.unsplash.com/photo-1613977257363-707ba9348227?w=900&q=80" alt="VRS House" class="featured-slide-img" />
+            <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=900&q=80" alt="VRS House" class="featured-slide-img" />
+            <img src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?w=900&q=80" alt="VRS House" class="featured-slide-img" />
+          </div>
+
+          <!-- <div class="featured-price-badge" id="housePriceBadge">₹4,500 / Night</div> -->
+
+          <!-- Slider arrows -->
+          <button id="prevSlide" style="position:absolute;left:0.8rem;top:50%;transform:translateY(-50%);background:rgba(13,13,13,0.7);border:1px solid rgba(201,168,76,0.3);color:var(--gold);width:34px;height:34px;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:all 0.3s;font-size:0.8rem;" title="Prev">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <button id="nextSlide" style="position:absolute;right:0.8rem;top:50%;transform:translateY(-50%);background:rgba(13,13,13,0.7);border:1px solid rgba(201,168,76,0.3);color:var(--gold);width:34px;height:34px;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:all 0.3s;font-size:0.8rem;" title="Next">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+
+          <div class="featured-slider-dots">
+            <button class="slider-dot active"></button>
+            <button class="slider-dot"></button>
+            <button class="slider-dot"></button>
+          </div>
+        </div>
+
+        <!-- House Info -->
+        <div class="reveal reveal-delay-2">
+          <h2 class="house-info-title" id="houseName">VRS House</h2>
+          <p class="house-info-sub" id="houseSub"> Premium Suite</p>
+
+          <div class="house-tags" id="houseTags">
+            <span class="house-tag" style="font-family: 'Times New Roman', Times, serif;">3 Bedrooms</span>
+            <span class="house-tag" style="font-family: 'Times New Roman', Times, serif;">2 bathrooms</span>
+            <span class="house-tag" style="font-family: 'Times New Roman', Times, serif;">850 sq.feet</span>
+          </div>
+
+          
+          <!-- Amenities -->
+          <div class="house-amenities-grid">
+            <div class="house-amenity"><i class="fas fa-wifi"></i><span>Free WiFi</span></div>
+            <div class="house-amenity"><i class="fas fa-snowflake"></i><span>AC</span></div>
+            <div class="house-amenity"><i class="fas fa-tv"></i><span>Smart TV</span></div>
+            <div class="house-amenity"><i class="fas fa-fire-burner"></i><span>Kitchen</span></div>
+            <div class="house-amenity"><i class="fas fa-droplet"></i><span>Hot Water</span></div>
+            <div class="house-amenity"><i class="fas fa-car"></i><span>Parking</span></div>
+          </div>
+
+          <!-- Stats -->
+          <div class="house-stats">
+            <div class="house-stat-row">
+              <div class="house-stat-label"><span>Cleanliness</span><span class="pct">98%</span></div>
+              <div class="stat-bg"><div class="stat-fill" data-width="98%"></div></div>
+            </div>
+            <div class="house-stat-row">
+              <div class="house-stat-label"><span>Satisfaction</span><span class="pct">95%</span></div>
+              <div class="stat-bg"><div class="stat-fill" data-width="95%"></div></div>
+            </div>
+            <div class="house-stat-row">
+              <div class="house-stat-label"><span>Comfort</span><span class="pct">100%</span></div>
+              <div class="stat-bg"><div class="stat-fill" data-width="100%"></div></div>
+            </div>
+          </div>
+
+          <div class="house-cta-btns">
+            <a href="contact.html" class="btn-gold" style="font-family:var(--font-heading);font-size:0.65rem;letter-spacing:0.2em;text-transform:uppercase;font-weight:700;padding:0.85rem 2rem;background:var(--gold);color:var(--black);border:1px solid var(--gold);transition:all 0.35s;display:inline-block;">Reserve Now</a>
+            <a href="contact.html" class="btn-outline" style="font-family:var(--font-heading);font-size:0.65rem;letter-spacing:0.2em;text-transform:uppercase;font-weight:600;padding:0.85rem 2rem;background:transparent;color:var(--text);border:1px solid rgba(245,240,232,0.35);transition:all 0.35s;display:inline-block;">Enquire</a>
+          </div>
+        </div>
+
+      </div><!-- end featured-showcase -->
+
+      <!-- ---- ALL 6 HOUSE CARDS ---- -->
+      <!-- <div class="all-houses" style="padding:0;background:transparent;">
+        <div style="padding:0;">
+          <div class="all-houses-header reveal" style="text-align:left;margin-bottom:1.5rem;">
+            <span style="font-family:var(--font-heading);font-size:0.62rem;letter-spacing:0.28em;text-transform:uppercase;color:var(--gold);display:block;margin-bottom:0.3rem;">All Residences</span>
+            <p class="all-houses-note">Click any house below to explore it in detail above ↑</p>
+          </div>
+          <div class="houses-grid">
+
+            <div class="house-card reveal reveal-delay-1" style="border-color:rgba(201,168,76,0.5);">
+              <div class="house-card-img">
+                <img src="https://images.unsplash.com/photo-1613977257363-707ba9348227?w=600&q=75" alt="The Onyx Den" loading="lazy" />
+                <div class="house-card-number">01</div>
+              </div>
+              <div class="house-card-body">
+                <h3 class="house-card-name">The Onyx Den</h3>
+                <p class="house-card-desc">Dark luxury with gold finishes, private pool and garden views. Ideal for families.</p>
+                <div class="house-card-meta">
+                  <span class="house-card-price">₹4,500 / Night</span>
+                  <a href="contact.html" class="house-card-btn">Book Now</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="house-card reveal reveal-delay-2">
+              <div class="house-card-img">
+                <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=600&q=75" alt="Ivory Palace" loading="lazy" />
+                <div class="house-card-number">02</div>
+              </div>
+              <div class="house-card-body">
+                <h3 class="house-card-name">Ivory Palace</h3>
+                <p class="house-card-desc">Pristine marble interiors, panoramic city views and timeless elegance throughout.</p>
+                <div class="house-card-meta">
+                  <span class="house-card-price">₹4,500 / Night</span>
+                  <a href="contact.html" class="house-card-btn">Book Now</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="house-card reveal reveal-delay-3">
+              <div class="house-card-img">
+                <img src="https://images.unsplash.com/photo-1596436889106-be35e843f974?w=600&q=75" alt="Sky Loft" loading="lazy" />
+                <div class="house-card-number">03</div>
+              </div>
+              <div class="house-card-body">
+                <h3 class="house-card-name">Sky Loft</h3>
+                <p class="house-card-desc">Open-plan executive retreat with a private rooftop deck and floor-to-ceiling windows.</p>
+                <div class="house-card-meta">
+                  <span class="house-card-price">₹4,500 / Night</span>
+                  <a href="contact.html" class="house-card-btn">Book Now</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="house-card reveal reveal-delay-1">
+              <div class="house-card-img">
+                <img src="https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=600&q=75" alt="Bronze Villa" loading="lazy" />
+                <div class="house-card-number">04</div>
+              </div>
+              <div class="house-card-body">
+                <h3 class="house-card-name">Bronze Villa</h3>
+                <p class="house-card-desc">Our grandest villa with 5 bedrooms, private garden and outdoor BBQ entertainment area.</p>
+                <div class="house-card-meta">
+                  <span class="house-card-price">₹4,500 / Night</span>
+                  <a href="contact.html" class="house-card-btn">Book Now</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="house-card reveal reveal-delay-2">
+              <div class="house-card-img">
+                <img src="https://images.unsplash.com/photo-1560185127-6ed189bf02f4?w=600&q=75" alt="Azure Retreat" loading="lazy" />
+                <div class="house-card-number">05</div>
+              </div>
+              <div class="house-card-body">
+                <h3 class="house-card-name">Azure Retreat</h3>
+                <p class="house-card-desc">Infinity pool, natural stone accents and serene nature views for a resort-style escape.</p>
+                <div class="house-card-meta">
+                  <span class="house-card-price">₹4,500 / Night</span>
+                  <a href="contact.html" class="house-card-btn">Book Now</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="house-card reveal reveal-delay-3">
+              <div class="house-card-img">
+                <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&q=75" alt="Gold Studio" loading="lazy" />
+                <div class="house-card-number">06</div>
+              </div>
+              <div class="house-card-body">
+                <h3 class="house-card-name">Gold Studio</h3>
+                <p class="house-card-desc">Boutique compact luxury for solo travelers and couples with a dedicated work lounge.</p>
+                <div class="house-card-meta">
+                  <span class="house-card-price">₹4,500 / Night</span>
+                  <a href="contact.html" class="house-card-btn">Book Now</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div> -->
+
+    </div>
+  </section>
+
+  <!-- ===================== HOUSE RULES ===================== -->
+<section class="house-rules">
+  <div class="house-rules-inner">
+
+    <div class="reveal">
+      <span class="section-label">Guest Guidelines</span>
+      <h2>House <span>Rules</span></h2>
+      <div class="rules-line"></div>
+    </div>
+
+    <div class="rules-grid">
+
+      <div class="rule-card reveal">
+        <i class="fas fa-clock"></i>
+        <p><strong>Check-in:</strong> 1:00 PM &nbsp; | &nbsp; <strong>Check-out:</strong> 11:00 AM.</p>
       </div>
-      <div class="why-book-item reveal reveal-delay-3">
-        <div class="why-book-icon"><i class="fas fa-rotate-left"></i></div>
-        <h4>Flexible Cancellation</h4>
-        <p>Plans change — we understand. Enjoy hassle-free cancellations up to 48 hours before your check-in date.</p>
+
+      <div class="rule-card reveal">
+        <i class="fas fa-user"></i>
+        <p>Only registered guests are allowed to stay in the rooms. Extra visitors are not permitted.</p>
       </div>
-      <div class="why-book-item reveal reveal-delay-4">
-        <div class="why-book-icon"><i class="fas fa-award"></i></div>
-        <h4>Best Price Guarantee</h4>
-        <p>Book directly with us for the best available rates. We match any lower price found elsewhere — guaranteed.</p>
+
+      <div class="rule-card reveal">
+        <i class="fas fa-ban"></i>
+        <p>Smoking, alcohol consumption, and any inappropriate activities are strictly not allowed inside the property.</p>
       </div>
+
+      <div class="rule-card reveal">
+        <i class="fas fa-volume-low"></i>
+        <p>Please be considerate of other guests and maintain a quiet and peaceful environment.</p>
+      </div>
+
+      <div class="rule-card reveal">
+        <i class="fas fa-moon"></i>
+        <p>Quiet hours begin after <strong>10:00 PM</strong>. Loud music or disturbances are not permitted.</p>
+      </div>
+
+      <div class="rule-card reveal">
+        <i class="fas fa-champagne-glasses"></i>
+        <p>Parties, gatherings, or celebrations inside the rooms are not allowed.</p>
+      </div>
+
+      <div class="rule-card reveal">
+        <i class="fas fa-triangle-exclamation"></i>
+        <p>Please report any damage or maintenance issue immediately to the management.</p>
+      </div>
+
+      <div class="rule-card reveal">
+        <i class="fas fa-file-invoice"></i>
+        <p>If any damage occurs to the property, guests may be responsible for applicable repair charges.</p>
+      </div>
+
     </div>
   </div>
 </section>
 
-<!-- ===================== CTA BANNER ===================== -->
-<section class="services-cta-banner">
-  <div class="services-cta-banner-inner reveal">
-    <span style="font-family:var(--font-heading);font-size:0.65rem;letter-spacing:0.3em;text-transform:uppercase;color:var(--gold);display:block;margin-bottom:0.8rem;">Ready to Experience Luxury?</span>
-    <h2>Reserve Your <span>Perfect Stay</span> Today</h2>
-    <p>Our houses is available for nightly, weekly and extended stays. Contact our team to check availability and secure your luxury retreat in Mayiladuthurai.</p>
-    <div class="cta-btns">
-      <a href="contact.html" class="btn-gold" style="font-family:var(--font-heading);font-size:0.65rem;letter-spacing:0.2em;text-transform:uppercase;font-weight:700;padding:0.9rem 2.2rem;background:var(--gold);color:var(--black);border:1px solid var(--gold);transition:all 0.35s;display:inline-block;">Book Your Stay</a>
-      <a href="amenities.html" class="btn-outline" style="font-family:var(--font-heading);font-size:0.65rem;letter-spacing:0.2em;text-transform:uppercase;font-weight:600;padding:0.9rem 2.2rem;background:transparent;color:var(--text);border:1px solid rgba(245,240,232,0.35);transition:all 0.35s;display:inline-block;">View Amenities</a>
+
+<!-- ===================== SAFETY GUIDELINES ===================== -->
+<section class="house-rules safety-rules">
+  <div class="house-rules-inner">
+
+    <div class="reveal">
+      <span class="section-label">Safety First</span>
+      <h2>Safety & <span>Evacuation</span></h2>
+      <div class="rules-line"></div>
     </div>
+
+    <div class="rules-grid">
+
+      <div class="rule-card reveal">
+        <i class="fas fa-snowflake"></i>
+        <p>Please switch off AC, lights, and check the refrigerator before leaving the room.</p>
+      </div>
+
+      <div class="rule-card reveal">
+        <i class="fas fa-window-maximize"></i>
+        <p>Kindly ensure all windows are properly closed when leaving the room.</p>
+      </div>
+
+      <div class="rule-card reveal">
+        <i class="fas fa-person-running"></i>
+        <p>In case of an emergency, remain calm and follow the instructions provided by the management.</p>
+      </div>
+
+      <div class="rule-card reveal">
+        <i class="fas fa-bell"></i>
+        <p>Immediately inform the staff if you notice any safety concern or unusual situation.</p>
+      </div>
+
+    </div>
+
   </div>
 </section>
 
-<!-- ===================== FOOTER ===================== -->
-<div id="footer-placeholder"></div>
+  <!-- ===================== WHY BOOK WITH US ===================== -->
+  <section class="why-book-strip">
+    <div class="why-book-inner">
+      <div class="reveal">
+        <span style="font-family:var(--font-heading);font-size:0.65rem;letter-spacing:0.3em;text-transform:uppercase;color:var(--gold);display:block;margin-bottom:0.8rem;">Our Promise</span>
+        <h2 style="font-family:var(--font-heading);font-size:clamp(1.5rem,3vw,2.2rem);text-transform:uppercase;letter-spacing:0.08em;color:var(--text);font-weight:700;">Why Book With VRS</h2>
+        <div style="width:50px;height:1px;background:var(--gold);margin:1.2rem auto;"></div>
+      </div>
+      <div class="why-book-grid">
+        <div class="why-book-item reveal reveal-delay-1">
+          <div class="why-book-icon"><i class="fas fa-lock"></i></div>
+          <h4>Secure Booking</h4>
+          <p>Your reservation is confirmed instantly with full data security and transparent pricing — no hidden charges.</p>
+        </div>
+        <div class="why-book-item reveal reveal-delay-2">
+          <div class="why-book-icon"><i class="fas fa-headset"></i></div>
+          <h4>24/7 Concierge</h4>
+          <p>Our dedicated concierge team is available round-the-clock to assist with any request before and during your stay.</p>
+        </div>
+        <div class="why-book-item reveal reveal-delay-3">
+          <div class="why-book-icon"><i class="fas fa-rotate-left"></i></div>
+          <h4>Flexible Cancellation</h4>
+          <p>Plans change — we understand. Enjoy hassle-free cancellations up to 48 hours before your check-in date.</p>
+        </div>
+        <div class="why-book-item reveal reveal-delay-4">
+          <div class="why-book-icon"><i class="fas fa-award"></i></div>
+          <h4>Best Price Guarantee</h4>
+          <p>Book directly with us for the best available rates. We match any lower price found elsewhere — guaranteed.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<script src="assets/js/common.js"></script>
-<script src="assets/js/services.js"></script>
-</body>
-</html>
+  <!-- ===================== CTA BANNER ===================== -->
+  <section class="services-cta-banner">
+    <div class="services-cta-banner-inner reveal">
+      <span style="font-family:var(--font-heading);font-size:0.65rem;letter-spacing:0.3em;text-transform:uppercase;color:var(--gold);display:block;margin-bottom:0.8rem;">Ready to Experience Luxury?</span>
+      <h2>Reserve Your <span>Perfect Stay</span> Today</h2>
+      <p>Our houses is available for nightly, weekly and extended stays. Contact our team to check availability and secure your luxury retreat in Mayiladuthurai.</p>
+      <div class="cta-btns">
+        <a href="contact.html" class="btn-gold" style="font-family:var(--font-heading);font-size:0.65rem;letter-spacing:0.2em;text-transform:uppercase;font-weight:700;padding:0.9rem 2.2rem;background:var(--gold);color:var(--black);border:1px solid var(--gold);transition:all 0.35s;display:inline-block;">Book Your Stay</a>
+        <a href="amenities.html" class="btn-outline" style="font-family:var(--font-heading);font-size:0.65rem;letter-spacing:0.2em;text-transform:uppercase;font-weight:600;padding:0.9rem 2.2rem;background:transparent;color:var(--text);border:1px solid rgba(245,240,232,0.35);transition:all 0.35s;display:inline-block;">View Amenities</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <div id="footer-placeholder"></div>
+
+  <script src="assets/js/common.js"></script>
+  <script src="assets/js/services.js"></script>
+  </body>
+  </html>

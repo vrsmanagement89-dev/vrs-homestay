@@ -287,7 +287,8 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
 }
 
 .footer-contact-item span {
-  font-size: 0.8rem;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1 rem;
   color: var(--text-muted);
   line-height: 1.5;
 }
@@ -306,7 +307,7 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
   width: 38px;
   height: 38px;
   border-radius: 50%;
-  border: 1px solid rgba(201,168,76,0.4);
+  /* border: 1px solid rgba(201,168,76,0.4); */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -352,6 +353,14 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
     grid-template-columns: 1fr;
     gap: 1.5rem;
     padding: 0 1.2rem;
+  }
+
+  
+}
+
+@media (max-width: 300px){
+  .navbar-logo-text{
+    display: none;
   }
 }
 
