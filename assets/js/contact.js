@@ -13,24 +13,40 @@ document.addEventListener('DOMContentLoaded', function () {
   revealEls.forEach(el => observer.observe(el));
 
   // --- Booking Form ---
-  const form = document.getElementById('bookingForm');
-  const successMsg = document.getElementById('formSuccess');
+  document.getElementById("bookingForm").addEventListener("submit", function(e){
+  e.preventDefault();
 
-  if (form) {
-    form.addEventListener('submit', function (e) {
-      e.preventDefault();
-      const btn = form.querySelector('.form-submit');
-      btn.textContent = 'Sending...';
-      btn.disabled = true;
-      setTimeout(() => {
-        form.reset();
-        btn.textContent = 'Send Enquiry';
-        btn.disabled = false;
-        if (successMsg) successMsg.classList.add('show');
-        setTimeout(() => successMsg.classList.remove('show'), 5000);
-      }, 1500);
-    });
-  }
+  const fname = document.getElementById("fname").value;
+  const lname = document.getElementById("lname").value;
+  const phone = document.getElementById("phone").value;
+  const email = document.getElementById("email").value;
+  const checkin = document.getElementById("checkin").value;
+  const checkout = document.getElementById("checkout").value;
+  const guests = document.getElementById("guests").value;
+  const message = document.getElementById("message").value;
+
+  const whatsappNumber = "919363004340";
+
+  const text =
+`Hello VRS Homestay,
+
+I would like to enquire about a stay.
+
+Name: ${fname} ${lname}
+Phone: ${phone}
+Email: ${email}
+
+Check-in Date: ${checkin}
+Check-out Date: ${checkout}
+Guests: ${guests}
+
+Special Request:
+${message}`;
+
+  const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(text)}`;
+
+  window.open(url, "_blank");
+});
 
   // --- FAQ Accordion ---
   document.querySelectorAll('.faq-question').forEach(btn => {
