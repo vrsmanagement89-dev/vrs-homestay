@@ -16,7 +16,7 @@
 .hero-bg {
   position: absolute;
   inset: 0;
-  background: url('/assets/images/img/photo_6251431174458773282_y.jpg') center/cover no-repeat;
+  background: url('/assets/images/img/vrs_bg.jpg') center/cover no-repeat;
   transform: scale(1.05);
   animation: heroZoom 12s ease-in-out infinite alternate;
 }
