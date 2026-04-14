@@ -16,7 +16,7 @@
 .hero-bg {
   position: absolute;
   inset: 0;
-  background: url('/assets/images/img/vrs_bg.jpg') center/cover no-repeat;
+  background: url('/assets/images/temple/Screenshot\ 2026-04-14\ 081701.png') center/cover no-repeat;
   transform: scale(1.05);
   animation: heroZoom 12s ease-in-out infinite alternate;
 }
